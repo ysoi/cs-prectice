@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- css3中关系型选择器 -->
+    <section>
+        <div>
+            落跑甜心
+            <div>加勒比海盗</div>
+        </div>
+        <span>教父</span>
+        <span>辛德勒的名单</span>
+        <div>
+            美丽人生
+            <div>金融风暴</div>
+        </div>
+        <div>美国往事</div>
+        <div>
+            <span>肖生克的救赎</span>
+            <span>
+                死亡诗社
+                <span>华尔街之狼</span>
+            </span>
+        </div>
+
+    </section>
+</body>
+<style>
+    /*  */
+    section div{
+        background:red;
+    }
+    section>div{
+        background:green;
+    }
+    div+span{
+        background:blue;
+
+    }
+    div~span{
+        background:purple;
+    }
+</style>
+</html>

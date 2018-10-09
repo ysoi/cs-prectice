@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="44">
+            <div class="out">
+                    世界
+                    <div class="inOne">东方</div>
+                    <div class="inTwo">西方</div>
+            </div>
+            <img src="./imgs/01nature.jpg" >
+                
+    </div>
+  
+</body>
+<style>
+    div[id]{
+       
+    }
+    .out{
+        height:500px;
+        width:600px;
+        padding:20px;
+        /* opacity:.5; */
+        background:url("./imgs/01nature.jpg");
+        background-repeat:no-repeat;
+        /* background-position:center center; */
+        background-attachment:scroll;
+        /* background-origin:content-box; */
+        border:2px solid rgba(0,0,200,.6);
+        /* background-clip:padding-box; */
+        background-size:cover;
+        background-image:-webkit-radial-gradient(blue,red,green);
+        
+        /* overflow:scroll; */
+        border-radius:50%;
+        /* box-shadow:h-shodow（阴影偏离距离）,v-shadow,blur(阴影模糊的距离)，
+        spread(阴影的尺寸)，color，inset(可将外部阴影改为内部阴影)*/
+        /* box-shadow:10px 10px 2px 5px gray; */
+       
+    }
+    .out .inOne{
+        height:100px;
+        width:100px;
+        background:transparent;
+
+    }
+    /* .out .inTwo{
+        height:100px;
+        width:100px;
+         background:url("./imgs/01nature.jpg");
+        /* background-repeat:no-repeat; */
+        /* background-position:center center;
+        background-attachment:fixed; */
+    /* } */ 
+    h1{
+        text-shadow: 2px 2px 2px  red;
+    }
+    img{
+        border:2px solid #666;
+        /* display:block; */
+       
+    }
+    
+</style>
+</html>

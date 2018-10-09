@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" title="wehello">
+    <!-- 蓝 -->
+    <input type="text" title="hel">
+    <!-- 绿 -->
+    <input type="text" title ="helle">
+    <!-- 黄 -->
+    <input type="text" title ="he">   
+    <!-- 红 -->
+    <input type="text" title =" el ">
+    <!-- 黑 -->
+    <input type="text" title ="helloo">
+    <!-- 粉 -->
+    <input type="text" title="br-hello">
+</body>
+<style>
+  input[title]{
+      background:red;
+  }
+  input[title="hel"]{
+    background:green;
+  }
+  input[title *="lle"]{
+    background:yellow;
+  }
+  input[title ^="we"]{
+    background:blue;
+  }
+  input[title $="loo"]{
+    background:pink;
+  }
+  input[title ~="el"]{
+    background:black;
+  }
+  input[title |="br"]{
+      background:purple;
+  }
+</style>
+<script>
+
+</script>
+</html>
