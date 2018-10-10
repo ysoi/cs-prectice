@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <div id="wrap">
+       <img src="./imgs/01nature.jpg" alt="" id="turntable">
+       <img src="./imgs/02-pointer.jpg" alt="" id="pointer">
+   </div>
+</body>
+    <style>
+       #wrap{
+           background-image:url("./imgs/03-table.jpg");
+           background-repeat:no-repeat;
+           width:650px;
+           height:600px;
+           margin:10px auto;
+           position:relative;
+       }
+       #turntable{
+           position:absolute;
+           left:117px;
+           top:59px;
+           transform:rotate(0deg);
+           transition:all 3s ease 0s;
+           -webkit-transition:all 3s ease 0s;
+       }
+       #pointer{
+           position:absolute;
+           width:30px;
+           height:30px;
+           left:255px;
+           top:155px;
+       }
+
+    </style>
+    <script>
+        window.onload=function(){
+            var pointer=document.getElementById("pointer");
+            var turntable=document.getElementById("turntable");
+            var count=0;
+            pointer.onclick=function(){
+                count++;
+                //六个随机数
+                var degrees=[0,56,108,160,208,260,308];
+                //设置转到的一个度数，向下取整
+                var index=Math.floor(Math.random()*7);
+                turntable.style.transform="rotate("+(3*360*count+degrees[index])+"deg)";
+        
+                
+            }
+        }
+    </script>
+  
+</html>

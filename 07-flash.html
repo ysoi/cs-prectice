@@ -8,30 +8,30 @@
 </head>
 <body>
     <div class="out">
-        <div class="box">
-             冠军
-        </div>
+        winner
     </div>
-   
 </body>
 <style>
     .out{
-        position:relative;
-    }
-     .out .box{
         position:absolute;
         background:red;
-        width:200px;
+        width:10px;
         height:200px;
-        transition:width 2s;
+        transition:all 5s ease 1s; 
+        left:0px;
+        top:0px;
       
-       
-        
-        
+
+        /* 多长时间之后  那个属性 在多长时间之内 以什么样的运动曲线 */
+        /* -moz-transition:width 5s ease 1s;  */
+        -webkit-transition: all 5s ease 1s;	
+        /* -o-transition:width 5s ease 1s; */
     }
-    .out .box:hover{
-      
-        width:200px;
+    .out:hover{
+       width:500px;
+       background:blue;
+       left:50%;
+       top:50%;
      
     }
 </style>
